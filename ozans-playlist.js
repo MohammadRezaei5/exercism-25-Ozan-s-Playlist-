@@ -54,3 +54,17 @@ function deleteTrack(playlist, track) {
 
 // console.log(deleteTrack(playlist, "The Treasure - Fra Lippo Lippi"));
 // console.log(deleteTrack(playlist, "I Feel the Magic - Belinda Carlisle"));
+
+///---///
+
+// const playlist = [
+//   "All Mine - Portishead",
+//   "Sight to Behold - Devendra Banhart",
+//   "Sour Times - Portishead"
+// ];
+
+function listArtists(playlist) {
+  return Array.from(new Set(playlist.map((track) => track.split(" - ").pop())));
+}
+
+// console.log(listArtists(playlist));
