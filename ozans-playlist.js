@@ -25,3 +25,16 @@ function hasTrack(playlist, track) {
 
 // console.log(hasTrack(playlist, "Dr. Funkenstein - Parliament"));
 // console.log(hasTrack(playlist, "Walking in the Rain - Grace Jones"));
+
+///---///
+
+// const playlist = ["Selma - Bijelo Dugme"];
+
+function addTrack(playlist, track) {
+  playlist = new Set(playlist);
+  playlist.add(track);
+  return Array.from(playlist);
+}
+
+// console.log(addTrack(playlist, "Atomic Dog - George Clinton"));
+// console.log(addTrack(playlist, "Selma - Bijelo Dugme"));
