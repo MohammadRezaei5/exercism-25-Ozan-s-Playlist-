@@ -38,3 +38,19 @@ function addTrack(playlist, track) {
 
 // console.log(addTrack(playlist, "Atomic Dog - George Clinton"));
 // console.log(addTrack(playlist, "Selma - Bijelo Dugme"));
+
+///---///
+
+// const playlist = [
+//   "The Treasure - Fra Lippo Lippi",
+//   "After the Fall - Klaus Nomi"
+// ];
+
+function deleteTrack(playlist, track) {
+  playlist = new Set(playlist);
+  playlist.delete(track);
+  return Array.from(playlist);
+}
+
+// console.log(deleteTrack(playlist, "The Treasure - Fra Lippo Lippi"));
+// console.log(deleteTrack(playlist, "I Feel the Magic - Belinda Carlisle"));
